@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* main - Prints the all single numbers of base 10.
+* main - Prints base 16 in lower case.
 * Return: 0
 */
 
