@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
 * main - Print _putchar then a new line.
@@ -12,10 +12,15 @@ int i;
 
 for (i = 0; i <= 7; i++)
 {
-putchar(test_name[i]);
+_putchar(test_name[i]);
 }
 
-putchar('\n');
+_putchar('\n');
 
 return (0);
+}
+
+int _putchar(char c)
+{
+return putchar(c);
 }
