@@ -7,15 +7,15 @@
 
 int main(void)
 {
-char test_name[] = "_putchar";
-int i;
+  char test_name[] = "_putchar";
+  int i;
 
-for (i = 0; i <= 7; i++)
-{
-_putchar(test_name[i]);
-}
+  for (i = 0; i <= 7; i++)
+    {
+     putchar(test_name[i]);
+    }
 
-_putchar('\n');
+  putchar('\n');
 
-return (0);
+  return (0);
 }
