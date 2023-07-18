@@ -5,7 +5,7 @@
 *
 **/
 
-void pr_alph(void)
+void print_alphabet(void)
 {
 
 char i;
