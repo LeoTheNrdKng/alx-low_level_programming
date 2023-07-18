@@ -22,5 +22,5 @@ return (0);
 
 int _putchar(char c)
 {
-return putchar(c);
+return _putchar(c);
 }
