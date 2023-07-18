@@ -1,7 +1,8 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include <unistd.h>
 
-int main(void);
-int _putchar(char c);
+/**
+* _putchar - writes a program that prints _putchar, followed by a new line.
+*/
 
-#endif
+int _putchar(char);
+
