@@ -1,0 +1,1 @@
+This readme is for the 0x03-debugging folder, which contains debug commands and fixes for certain scripts.
