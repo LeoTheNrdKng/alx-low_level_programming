@@ -12,7 +12,7 @@ int size, i, l;
 char c;
 
 for (size = 0; s[size] != '\0'; size++)
-		;
+;
 l = size - 1;
 
 for (i = 0; l >= 0 && i < l; l--, i++)
