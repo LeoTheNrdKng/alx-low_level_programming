@@ -1,4 +1,4 @@
-#include "mainn.h"
+#include "main.h"
 /**
 * print_buffer - entry point
 * @b: arguments
