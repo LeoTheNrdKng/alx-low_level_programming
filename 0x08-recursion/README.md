@@ -1,0 +1,1 @@
+This directory contains scripts for recursions. Basically, a recursion is like a loop, but instead of repeating the code, the function keeps calling itself, but a simpler version of itself until it's done executing.
