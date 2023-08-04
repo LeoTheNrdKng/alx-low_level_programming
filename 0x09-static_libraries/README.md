@@ -1,1 +1,1 @@
-This directory contains scripts for static libraries.
+This directory has scripts for static library.

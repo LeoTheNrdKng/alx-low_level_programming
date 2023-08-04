@@ -1,3 +1,4 @@
 #!/bin/bash
-ar -rc libmy.a
+gcc -c *.c
+ar -rc libmy.a *.o
 ranlib libmy.a
