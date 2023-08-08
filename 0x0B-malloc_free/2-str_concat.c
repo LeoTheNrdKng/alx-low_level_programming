@@ -1,52 +1,53 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * _strlen - Counts the length of a string.
- * @s: String.
- * Return: Length.
+ * _len - serch of size of a  string
+ * @string: string.
+ * Return: size of string.
  */
-
-unsigned int _strlen(char *s)
+int _len(char *string)
 {
-	unsigned int c;
+	int len;
 
-	for (c = 0; s[c]; c++)
-		;
-
-	return (c);
+	for (len = 0; string[len] != '\0'; len++)
+	;
+	return (len);
 }
 
 /**
- * str_concat - Concatenates two strings
- * @s1: First string.
- * @s2: Second string.
- * Return: String that contains the contents of s1, followe
- * by the contents of s2.
+ * str_concat - concatenate two string.
+ * @s1: string 1
+ * @s2: string 2
+ * Return: pointer to new string.
  */
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int i, size1, size2;
-	char *scat;
+	int len1, len2, i, j;
+	char *ptr;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
 
-	size1 = _strlen(s1);
-	size2 = _strlen(s2);
+	len1 = _len(s1);
+	len2 = _len(s2);
 
-	scat = malloc(sizeof(char) * (size1 + size2 + 1));
-
-	if (scat == NULL)
+	ptr = (char *)malloc((len1 + len2 + 1) * sizeof(char));
+	if (ptr == NULL)
 		return (NULL);
 
-	for (i = 0; s1[i]; i++)
-		scat[i] = s1[i];
-	for (i = 0; s2[i]; i++)
-		scat[i + size1] = s2[i];
-	scat[i + size1] = '\0';
-
-	return (scat);
+	for (i = 0, j = 0; i < (len1 + len2); i++)
+	{
+		if (i < len1)
+		{
+			ptr[i] = s1[i];
+		}
+		else
+		{
+			ptr[i] = s2[j];
+			j++;
+		}
+	}
+	ptr[i] = '\0';
+	return (ptr);
 }
