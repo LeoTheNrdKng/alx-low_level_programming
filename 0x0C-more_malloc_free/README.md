@@ -1,0 +1,1 @@
+This directory contains more scripts on allocations, malloc and free commands.
