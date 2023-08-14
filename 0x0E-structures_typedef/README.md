@@ -1,0 +1,1 @@
+This directory contains scripts for typedef and structures for C programming.
