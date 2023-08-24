@@ -1,0 +1,1 @@
+This directory contains linked lists scripts.
